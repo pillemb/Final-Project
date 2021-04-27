@@ -1,6 +1,6 @@
 # Final-Project
 
-## Video URL:
+## Video URL: https://youtu.be/SCS-3KTCag4
 
 ## To use the bot, make an .env file with the variables; TOKEN (Discord bot Token), ID (Reddit Client ID), and SECRET (Reddot Client Secret).
 
