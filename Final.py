@@ -1,4 +1,5 @@
 import os
+from dotenv import load_dotenv
 import random
 import discord
 import asyncpraw
@@ -7,9 +8,11 @@ from discord.ext import commands
 #code from: https://www.youtube.com/watch?v=nW8c7vT6Hl4&list=PLW3GfRiBCHOhfVoiDZpSz8SM_HybXRPzZ&index=1&ab_channel=Lucas
 # for lines 9 to 20
 
-TOKEN = 'ODM0NTg1NzkxOTkyNDMwNjEz.YIDClg.m8zcO2bAXedIYgjhO4UmpLO2LOY'     #Discord bot token
-client_id = 'IrpX9GlIKUs2rg'                                              #Reddit client ID
-client_secret = '4ti2fBCAqve0usBqdpgO_NBomoPppQ'                          #Reddit client token
+load_dotenv()
+
+TOKEN = os.getenv('TOKEN')                                   #Discord bot token
+client_id = os.getenv('ID')                                  #Reddit client ID
+client_secret = os.getenv('SECRET')                          #Reddit client token
 
 client = commands.Bot(command_prefix='$')     #setting up bot prefix
 
